@@ -1,0 +1,21 @@
+#copyButton {
+    cursor: pointer;
+    background-color: #4a6fc2;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 150ms ease, box-shadow 200ms ease, transform 150ms ease;
+}
+
+#copyButton:hover {
+    background-color: #6585cb;
+}
+
+/* pressed state while mouse is down */
+#copyButton:active {
+    transform: translateY(2px) scale(0.995);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.36);
+}
+
+#copyButton.animate-shadow {
+    animation: shadow-pop 400ms ease;
+}
